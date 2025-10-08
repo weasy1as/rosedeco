@@ -1,3 +1,9 @@
+import Hero from "./components/Hero";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div className="bg-blush-50">
+      <Hero />
+    </div>
+  );
 }
