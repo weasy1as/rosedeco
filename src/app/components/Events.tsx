@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const Events = () => {
   const eventImages = Array.from(
@@ -11,17 +12,22 @@ const Events = () => {
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
         Our Past Events
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Marquee
+        pauseOnHover
+        gradient={false}
+        speed={40}
+        className="w-full overflow-hidden"
+      >
         {eventImages.map((image, index) => (
           <div
             key={index}
-            className="h-76 bg-cover bg-center rounded-xl shadow-md"
+            className="w-64 sm:w-72 md:w-80 h-64 sm:h-72 md:h-80 bg-cover bg-center rounded-xl shadow-md mx-4"
             style={{
               backgroundImage: `url(${image})`,
             }}
           />
-        ))}{" "}
-      </div>
+        ))}
+      </Marquee>
     </div>
   );
 };

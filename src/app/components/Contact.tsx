@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="flex items-center gap-2">
           <MdOutlineMail size={30} className="text-[#D4AF37]" />
           <Link
-            className="text-black text-xl hover:underline font-medium"
+            className="text-black text-sm md:text-xl hover:underline font-medium"
             href="mailto:contact@therosedecoration.com"
           >
             contact@therosedecoration.com
