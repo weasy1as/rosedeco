@@ -10,11 +10,11 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-blush-50 border-b-2 border-gray-200 p-4">
+    <nav className=" border-b-2 border-gray-200 p-4">
       {" "}
       <div className="flex items-center justify-between">
         {/* Logo + Title */}{" "}
-        <div className="flex items-center space-x-4">
+        <Link href={"/"} className="flex items-center space-x-4">
           {" "}
           <Image
             src="/logo.jpg"
@@ -26,7 +26,7 @@ const NavBar = () => {
           <h2 className="text-2xl font-bold text-[#D4AF37] tracking-tight">
             The Rose Decorations{" "}
           </h2>{" "}
-        </div>
+        </Link>
         {/* Desktop Links */}
         <div className="hidden md:flex items-center text-xl font-sans space-x-6 text-gray-600 font-medium">
           <Link className="hover:text-[#D4AF37] transition-colors" href="/">
@@ -40,14 +40,11 @@ const NavBar = () => {
           </Link>
           <Link
             className="hover:text-[#D4AF37] transition-colors"
-            href="/gallery"
+            href="#events"
           >
             Gallery
           </Link>
-          <Link
-            className="hover:text-[#D4AF37] transition-colors"
-            href="/about"
-          >
+          <Link className="hover:text-[#D4AF37] transition-colors" href="#">
             About
           </Link>
           <Link
@@ -80,10 +77,10 @@ const NavBar = () => {
           <Link href="#featured-packages" onClick={() => setMenuOpen(false)}>
             Packages
           </Link>
-          <Link href="/gallery" onClick={() => setMenuOpen(false)}>
+          <Link href="#events" onClick={() => setMenuOpen(false)}>
             Gallery
           </Link>
-          <Link href="/about" onClick={() => setMenuOpen(false)}>
+          <Link href="#" onClick={() => setMenuOpen(false)}>
             About
           </Link>
           <Link href="#contact" onClick={() => setMenuOpen(false)}>

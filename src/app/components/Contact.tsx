@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { MdOutlineMail } from "react-icons/md";
 import {
   Select,
   SelectContent,
@@ -18,7 +19,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="p-8 pt-15 grid grid-cols-1 md:grid-cols-2 gap-6 bg-blush-100 rounded-xl m-8"
+      className="p-8 pt-15 grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#FAF5F5] rounded-xl m-8"
     >
       <div className="flex flex-col gap-4">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
@@ -27,12 +28,15 @@ const Contact = () => {
           booking and pricing inquiries. {"Let's "}create something beautiful
           together!
         </p>
-        <Link
-          className="text-[#D4AF37] hover:underline font-medium"
-          href="mailto:contact@therosedecoration.com"
-        >
-          contact@therosedecoration.com
-        </Link>
+        <div className="flex items-center gap-2">
+          <MdOutlineMail size={30} className="text-[#D4AF37]" />
+          <Link
+            className="text-black text-xl hover:underline font-medium"
+            href="mailto:contact@therosedecoration.com"
+          >
+            contact@therosedecoration.com
+          </Link>
+        </div>
       </div>
       <div>
         <form className="flex flex-col gap-4 bg-white p-9 rounded-2xl shadow-md">

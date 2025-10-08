@@ -7,7 +7,7 @@ const Events = () => {
   );
 
   return (
-    <div className="flex flex-col p-8 pt-15">
+    <div id="events" className="flex flex-col p-8 pt-15">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
         Our Past Events
       </h2>
