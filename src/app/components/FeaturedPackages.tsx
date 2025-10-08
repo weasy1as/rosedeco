@@ -3,8 +3,11 @@ import React from "react";
 
 const FeaturedPackages = () => {
   return (
-    <div className="p-8 pt-15  grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div className="flex flex-col bg-blush-100 rounded-xl shadow-md hover:scale-110 transition-transform hover:px-2">
+    <div
+      id="featured-packages"
+      className="p-8 pt-15  grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <div className="flex flex-col bg-blush-50 rounded-xl shadow-md hover:scale-110 transition-transform hover:px-2">
         <CardHeader className="bg-[url('/packages/birthday.jpg')] bg-center bg-cover h-60 rounded-t-xl"></CardHeader>
         <CardDescription className="p-4 flex flex-col gap-4 justify-center items-center text-center">
           <h3 className="text-2xl font-bold text-gray-800">Birthdays</h3>
@@ -15,7 +18,7 @@ const FeaturedPackages = () => {
         </CardDescription>
       </div>
 
-      <div className="flex flex-col bg-blush-100 rounded-xl shadow-md hover:scale-110 transition-transform hover:px-2">
+      <div className="flex flex-col bg-blush-50 rounded-xl shadow-md hover:scale-110 transition-transform hover:px-2">
         <CardHeader className="bg-[url('/packages/babyShower.jpg')] bg-center bg-cover h-60 rounded-t-xl"></CardHeader>
         <CardDescription className="p-4 flex flex-col gap-4 justify-center items-center text-center">
           <h3 className="text-2xl font-bold text-gray-800">Baby Showers</h3>
@@ -25,7 +28,7 @@ const FeaturedPackages = () => {
           </p>
         </CardDescription>
       </div>
-      <div className="flex flex-col bg-blush-100 rounded-xl shadow-md hover:scale-110 transition-transform hover:px-2">
+      <div className="flex flex-col bg-blush-50 rounded-xl shadow-md hover:scale-110 transition-transform hover:px-2">
         <CardHeader className="bg-[url('/packages/engagement.jpg')] bg-center bg-cover h-60 rounded-t-xl"></CardHeader>
         <CardDescription className="p-4 flex flex-col gap-4 justify-center items-center text-center">
           <h3 className="text-2xl font-bold text-gray-800">Engagements</h3>
