@@ -1,4 +1,4 @@
-import { Card, CardDescription, CardHeader } from "@/components/ui/card";
+import { CardDescription, CardHeader } from "@/components/ui/card";
 import React from "react";
 
 const FeaturedPackages = () => {

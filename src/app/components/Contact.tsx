@@ -24,7 +24,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
         <p className="text-lg max-w-md text-gray-600 font-sans mb-8">
           Ready to plan your event? Fill out the form or email us directly for
-          booking and pricing inquiries. Let's create something beautiful
+          booking and pricing inquiries. {"Let's "}create something beautiful
           together!
         </p>
         <Link
