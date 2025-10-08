@@ -23,7 +23,7 @@ const NavBar = () => {
             height={50}
             className="rounded-full"
           />{" "}
-          <h2 className="text-2xl font-bold tracking-tight">
+          <h2 className="text-2xl font-bold text-[#D4AF37] tracking-tight">
             The Rose Decorations{" "}
           </h2>{" "}
         </div>
