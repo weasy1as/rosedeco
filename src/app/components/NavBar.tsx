@@ -44,7 +44,7 @@ const NavBar = () => {
       <div>
         <Button
           size={"lg"}
-          className="bg-blush-500 text-md font-bold hover:bg-blush-600"
+          className="bg-blush-500 text-md font-bold hover:bg-blush-600 hover:scale-110 transition-transform cursor-pointer text-white"
         >
           Book now
         </Button>
